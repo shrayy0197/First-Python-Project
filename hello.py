@@ -161,27 +161,99 @@ result=domain_name[domain_name.find('@'):]
 print(result)
 
 domain_name='ram123@gmail.com'
-result=domain_name[6:]
+result=domain#
+
+password=input('enter a password: ')
+result=password.strip()
+has=len(password)
+has=has -2
+print("="*33)
+step2=password[0]+'*'*has+password[-1]
+print(step2.center(50))
+print("="*33)
 print(result)
 
-full_name=input('Enter your ful name: ').lower() 
-result=full_name.split()
-print('_'.join(result))
+#operators
+num1=int(input('enter a first number: '))
+num2=int(input('enter a second nmber: '))
+print(num1+num2)
 
-password=input('Enter your password: ').lower()
-result=password.split()
-result=password.replace('a','@')
-result=password.replace('e','3')
-result=password.replace('i','!')
-result=password.replace('o','0')
-result=password.replace('s','$')
+#operators
+num1=int(input('enter a first number: '))
+num2=int(input('enter a second nmber: '))
+print(num1//num2)
 
-password=input('Enter your password: ').lower()
-result=password.maketrans('asoei','@$031')
-print(f'your secret agent code:{password.translate(result)}0##9')
+num1=[1,2,3,4]
+num1+=num2
+print(num1)
 
-domain_namename='laxman.kc123@gmail.com'
-result=username.find('laxman.kc')    #photos ma garera hera
-print(result)
+num1=[1,2,3,4]
+num2=num1       #effect parcha original lai modify nagarera naya return garcha tara effect gardaina cuz a lai no effect
+num1=num1+num2
+print(num1)
+print(num2)
 
+num1=[1,2,3,4]
+num2=num1
+num1+=num2     #original lai nai modifiy
+print(num1)
+print(num2)
 
+a=12
+b=13
+if a!=b and a%2==0:
+    print('success')
+else:
+    print('failed')
+
+student_name=['ram','shyam','abishek','harisharam']    #not in
+user_name=(input('eneter a student name: '))
+if user_name not in student_name:
+    print('true')
+else:
+    print('false')
+student_name='ram'
+print('r' not in student_name)
+
+ame='ram'
+print(id(name))  #memory location nikalera dine id le
+
+name='ram'
+name1='shyam'
+print(id(name))
+print(id(name1))
+print(name is name1)
+
+name=[12]
+name1=[12]
+print(id(name))
+print(id(name1))
+print(name is name1)
+
+#string tuple bollen value int float same variable ma multipple value assin garda pani same location aaucha
+#  cux they are immutable data type
+#list set dictionary they are mutable data type
+
+a=2+3
+print(a.real)
+print(a.imag) 
+#complex and real number
+# list[]
+tuples=(1,2,3)
+print(type(tuples))
+
+#set=(1,2,3)
+#dictionary {key-=value}{'ram':'A+'}
+
+a={*()}
+print(type(a))    #set
+
+a=12
+b=13
+print(a&b)
+print(bin(a))
+print(bin(b))    #check table csampus ma
+
+a=12
+b=13
+print(~a)   #bitwise not 
